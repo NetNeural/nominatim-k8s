@@ -68,6 +68,8 @@ RUN true \
         /var/tmp/* \
     && pip cache purge
 
+RUN chown root:nominatim /root/.postgresql/postgresql.crt
+
 COPY config.sh /app/config.sh
 COPY init.sh /app/init.sh
 COPY start.sh /app/start.sh
