@@ -34,6 +34,9 @@ RUN  \
         libicu-dev \
         python3-dev \
         python3-pip \
+        postgresql-contrib \
+        postgresql-16-postgis-3 \
+        postgresql-16-postgis-3-scripts \
         # Misc.
         curl \
         sudo \
