@@ -26,6 +26,7 @@ else
   useradd -m -p ${NOMINATIM_PASSWORD} nominatim
 fi
 
+cat /root/.postgresql/postgresql.crt
 chmod 644 /root/.postgresql/postgresql.crt
 
 if [ "$INIT_AND_EXIT" != "" ]; then
